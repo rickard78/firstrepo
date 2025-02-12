@@ -17,8 +17,8 @@ on:
 jobs:
   build:
     runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
-      - uses: w3c/markup-validator@v1
-      with:
-          file: /index.html
+        steps:
+          - uses: actions/checkout@v4
+          - uses: w3c/markup-validator@v1
+          with:
+              file: /index.html
