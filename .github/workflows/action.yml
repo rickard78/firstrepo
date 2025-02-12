@@ -29,8 +29,15 @@ jobs:
       - name: Run a one-line script
         run: echo Hello, world!
 
-      # Runs a set of commands using the runners shell
-      - name: Run a multi-line script
-        run: |
-          echo Add other actions to build,
-          echo test, and deploy your project.
+stages:
+    - Verify
+
+verify_html:
+    runs-on: ubuntu-latest
+    steps:
+        - uses: actions/checkout@v2
+        - name: Verify HTML
+          uses: w3c/html-validator-action@v2
+            script:
+            - echo "Verifyiing html"
+            - test -f /index.html
