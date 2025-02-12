@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\.github",
+    "\\.github\\workflows"
   ],
-  "SelectedNode": "\\C:\\Users\\Remote\\Source\\Repos\\firstrepo",
+  "SelectedNode": "\\.github",
   "PreviewInSolutionExplorer": false
 }
