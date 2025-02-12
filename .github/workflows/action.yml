@@ -38,6 +38,5 @@ verify_html:
         - uses: actions/checkout@v2
         - name: Verify HTML
           uses: w3c/html-validator-action@v2
-            script:
             - echo "Verifyiing html"
             - test -f /index.html
